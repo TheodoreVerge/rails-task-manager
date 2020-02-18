@@ -2,7 +2,8 @@
 
 <ul>
     <%@tasks.each do |task| %>
-    <li  style="list-style: none; text-decoration: none;" > <%=link_to task.title, task_path(task)%></li>
+  <li  style="list-style: none;"> <%=link_to task.title, task_path(task)%>
+    <%=link_to "😇😇😇", destroy_path(task), method: :delete %></li>
   <% end %>
   <br>
   <br>
